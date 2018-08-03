@@ -1,8 +1,8 @@
 package com.borrisstar.paysystem.dao;
 
-import com.borrisstar.paysystem.domain.PaySystem;
+import com.borrisstar.paysystem.domain.PayInvoice;
 
 //интерфейс для работы с хранилищем
 public interface PaySystemDAO {
-	void savePaySystem(PaySystem paySystem);
+	void savePaySystem(PayInvoice payInvoice);
 }

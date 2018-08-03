@@ -1,6 +1,6 @@
 package com.borrisstar.paysystem.dao;
 
-import com.borrisstar.paysystem.domain.PaySystem;
+import com.borrisstar.paysystem.domain.PayInvoice;
 import org.springframework.stereotype.Repository;
 
 //Реализация хранилища
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 //атрибут value задаёт имя бина
 public class PaySystemDAOImpl implements PaySystemDAO {
 
-	public void savePaySystem(PaySystem paySystem) {
+	public void savePaySystem(PayInvoice payInvoice) {
 
 	}
 }
