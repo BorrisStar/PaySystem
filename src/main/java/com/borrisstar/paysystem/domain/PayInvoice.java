@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.Objects;
 //класс для работы с платежами
 public class PayInvoice extends Model{
-
+	private String uid;// = UUID.randomUUID().toString();//Псевдоуникальный номер с датой
 	private BigDecimal amount;
 	private User payer;
 	private User recipient;
@@ -16,6 +16,14 @@ public class PayInvoice extends Model{
 		this.amount = amount;
 		this.payer = payer;
 		this.recipient = recipient;
+	}
+
+	public String getUid() {
+		return uid;
+	}
+
+	public void setUid(String uid) {
+		this.uid = uid;
 	}
 
 	public BigDecimal getAmount() {

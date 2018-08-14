@@ -1,11 +1,16 @@
 package com.borrisstar.paysystem.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Set;
 import java.util.UUID;
 
 /**
  * Entity
  */
+@Getter
+@Setter
 public class User extends Model {
 	private String fio;
 	private Integer age;
@@ -18,4 +23,5 @@ public class User extends Model {
 		this.phones = phones;
 		this.rating = rating;
 	}
+
 }
